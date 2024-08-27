@@ -27,10 +27,10 @@ class TodoBook:
         return new_id
 
     def pending_todos(self):
-        return 
+        return [todo for todo in self.todos.values() if not todo.completed]
 
     def completed_todos(self):
-        return 
+        return [todo for todo in self.todos.values() if todo.completed]
 
     def tags_todo_count(self):
         return
