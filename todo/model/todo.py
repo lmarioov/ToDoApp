@@ -33,4 +33,6 @@ class TodoBook:
         return [todo for todo in self.todos.values() if todo.completed]
 
     def tags_todo_count(self):
-        return
+        tag_count = {}
+        for todo in self.todos.values():
+        return tag_count
